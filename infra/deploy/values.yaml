@@ -2,13 +2,13 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 5
+replicaCount: 1
 
 image:
   repository: samuelalex93/nlw-unite-devops
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "132"
+  tag: "latest"
   port: 3333
 
 imagePullSecrets: []
@@ -92,8 +92,8 @@ readinessProbe:
 
 autoscaling:
   enabled: true
-  minReplicas: 5
-  maxReplicas: 8
+  minReplicas: 1
+  maxReplicas: 2
   # targetCPUUtilizationPercentage: 80
   targetMemoryUtilizationPercentage: 75
 
