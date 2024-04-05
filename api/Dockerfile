@@ -9,7 +9,6 @@ RUN npm ci
 COPY . .
 
 RUN npm run build
-RUN npm prune --prod
 
 COPY . ./dist
 
