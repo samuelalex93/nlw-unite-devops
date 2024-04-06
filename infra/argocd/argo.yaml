@@ -8,12 +8,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:samuelalex93/nlw-unite-devops.git
+    repoURL: https://github.com/samuelalex93/nlw-unite-devops.git
     targetRevision: HEAD
-    path: deploy
+    path: infra/deploy
   destination:
     server: https://kubernetes.default.svc
-    namespace: nlw
+    namespace: nlw-helm
   syncPolicy:
     automated:
       prune: true
